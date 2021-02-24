@@ -1,0 +1,40 @@
+<?php
+
+$NAMESPACE$
+
+$NAMESPACE$
+
+/**
+*use App\Repositories\MyRepositoryEloquent;
+*/
+use App\Entities\$CLASS$;
+use App\Presenters\$CLASS$Presenter;
+use Prettus\Repository\Criteria\RequestCriteria;
+
+/**
+ * Class $CLASS$RepositoryEloquent.
+ *
+ * @package $NAMESPACE$
+ */
+class $CLASS$RepositoryEloquent extends MyRepositoryEloquent implements $CLASS$Repository
+{
+    /**
+    * Specify Model class name
+    *
+    * @return string
+    */
+    public function model()
+    {
+        return $CLASS$::class;
+    }
+
+    /**
+    * Boot up the repository, pushing criteria
+    */
+    public function boot()
+    {
+        $this->pushCriteria(app(RequestCriteria::class));
+        $this->setPresenter(app($CLASS$Presenter::class));
+    }
+
+}

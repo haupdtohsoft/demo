@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Transformers;
+
+/**
+ * Class $CLASS$Transformer.
+ *
+ * @package $NAMESPACE$
+ */
+class $CLASS$Transformer extends MyTransformer
+{
+    //
+}

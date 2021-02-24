@@ -1,0 +1,18 @@
+<?php
+
+$NAMESPACE$
+
+/**
+*use App\Repositories\MyRepository;
+*/
+
+/**
+ * Interface $CLASS$Repository.
+ *
+ * @package $NAMESPACE$
+ */
+interface $CLASS$Repository extends MyRepository
+{
+    //
+}
+
